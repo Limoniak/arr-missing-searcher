@@ -22,7 +22,7 @@ Avant d'utiliser le script, assurez-vous d'avoir :
    cd arr-missing-searcher
    ```
 
-2. Ouvrez le fichier `config.json` et remplissez les informations suivantes :
+2. Ouvrez les scripts et remplissez les informations suivantes :
 
    - **Sonarr** :
      - `sonarr_url`: URL de votre serveur Sonarr (par exemple, `http://localhost:8989`).
@@ -32,14 +32,6 @@ Avant d'utiliser le script, assurez-vous d'avoir :
      - `radarr_url`: URL de votre serveur Radarr (par exemple, `http://localhost:7878`).
      - `radarr_api_key`: La clé API de votre instance Radarr.
 
-   Exemple de fichier `config.json` :
-   ```json
-   {
-     "sonarr_url": "http://localhost:8989",
-     "sonarr_api_key": "your_sonarr_api_key",
-     "radarr_url": "http://localhost:7878",
-     "radarr_api_key": "your_radarr_api_key"
-   }
    ```
 
 ## Utilisation 🚀
