@@ -1,12 +1,8 @@
-Voici un exemple de README pour le projet **ARR Missing Searcher** :
-
----
-
-# ARR Missing Searcher
+# ARR Missing Searcher 📥
 
 **ARR Missing Searcher** est un outil qui automatise la recherche des séries et films manquants dans vos bibliothèques gérées par **Sonarr** et **Radarr**. Il interagit avec leurs API pour garder vos collections complètes et à jour, simplifiant ainsi la gestion de vos contenus multimédias.
 
-## Prérequis
+## Prérequis ⚙️
 
 Avant d'utiliser le script, assurez-vous d'avoir :
 
@@ -18,11 +14,11 @@ Avant d'utiliser le script, assurez-vous d'avoir :
 
 - Un serveur **Sonarr** et **Radarr** fonctionnel avec les **API activées**. Vous aurez besoin de l'URL de votre instance Sonarr/Radarr et de la clé API respective.
 
-## Configuration
+## Configuration ⚡
 
 1. Clonez ou téléchargez ce dépôt :
    ```bash
-   git clone https://github.com/yourusername/arr-missing-searcher.git
+   git clone https://github.com/Limoniak/arr-missing-searcher.git
    cd arr-missing-searcher
    ```
 
@@ -46,23 +42,23 @@ Avant d'utiliser le script, assurez-vous d'avoir :
    }
    ```
 
-## Utilisation
+## Utilisation 🚀
 
-### Pour Sonarr
+### Pour Sonarr 🎬
 Le script vérifiera les séries manquantes et lancera une recherche pour chaque épisode manquant.
 
 ```bash
 python sonarr_missing_searcher.py
 ```
 
-### Pour Radarr
+### Pour Radarr 🎥
 Le script vérifiera les films manquants et lancera une recherche pour chaque film manquant.
 
 ```bash
 python radarr_missing_searcher.py
 ```
 
-## Planification
+## Planification 🕓
 
 Pour automatiser l'exécution des scripts, vous pouvez utiliser un **cron job** (Linux/macOS) ou un **Planificateur de tâches** (Windows).
 
@@ -72,21 +68,17 @@ Exemple de cron job (toutes les heures) :
 0 * * * * /usr/bin/python3 /path/to/radarr_missing_searcher.py
 ```
 
-## Contribuer
+## Contribuer 🤝
 
 Les contributions sont les bienvenues ! Si vous souhaitez améliorer ce projet, n'hésitez pas à ouvrir un **issue** ou à soumettre une **pull request**.
 
-## Licence
+## Licence 📄
 
 Ce projet est sous la licence MIT.
 
 ---
 
-### Quelques conseils :
+### Quelques conseils 💡 :
 
 1. Assurez-vous de configurer correctement vos URLs et clés API avant d'exécuter le script.
 2. Planifiez l'exécution régulière des scripts pour garantir que vos bibliothèques restent à jour avec les derniers épisodes et films.
-
---- 
-
-N'oubliez pas de personnaliser l'URL du dépôt GitHub et les informations relatives aux contributions selon votre projet.
