@@ -32,8 +32,6 @@ Avant d'utiliser le script, assurez-vous d'avoir :
      - `radarr_url`: URL de votre serveur Radarr (par exemple, `http://localhost:7878`).
      - `radarr_api_key`: La clé API de votre instance Radarr.
 
-   ```
-
 ## Utilisation 🚀
 
 ### Pour Sonarr & Radarr 🎬
