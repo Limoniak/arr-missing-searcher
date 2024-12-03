@@ -44,23 +44,15 @@ Avant d'utiliser le script, assurez-vous d'avoir :
 
 ## Utilisation 🚀
 
-### Pour Sonarr 🎬
-Le script vérifiera les séries manquantes et lancera une recherche pour chaque épisode manquant.
+### Pour Sonarr & Radarr 🎬
+Le script vérifiera les films/séries manquantes et lancera une recherche pour chaque film/épisode manquant.
 
 ```bash
 python sonarr_missing_searcher.py
-```
-
-### Pour Radarr 🎥
-Le script vérifiera les films manquants et lancera une recherche pour chaque film manquant.
-
-```bash
 python radarr_missing_searcher.py
 ```
 
 ## Planification 🕓
-
-Pour automatiser l'exécution des scripts, vous pouvez utiliser un **cron job** (Linux/macOS) ou un **Planificateur de tâches** (Windows).
 
 Exemple de cron job (toutes les heures) :
 ```bash
