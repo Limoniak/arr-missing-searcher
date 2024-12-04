@@ -1,66 +1,66 @@
 # ARR Missing Searcher 📥
 
-**ARR Missing Searcher** est un outil qui automatise la recherche des séries et films manquants dans vos bibliothèques gérées par **Sonarr** et **Radarr**. Il interagit avec leurs API pour garder vos collections complètes et à jour, simplifiant ainsi la gestion de vos contenus multimédias.
+**ARR Missing Searcher** is a tool that automates the search for missing series and movies in your libraries managed by **Sonarr** and **Radarr**. It interacts with their APIs to keep your collections complete and up-to-date, simplifying the management of your multimedia content.
 
-## Prérequis ⚙️
+## Prerequisites ⚙️
 
-Avant d'utiliser le script, assurez-vous d'avoir :
+Before using the script, ensure you have:
 
-- **Python 3.x** installé.
-- Les bibliothèques Python nécessaires installées :
+- **Python 3.x** installed.
+- The required Python libraries installed:
   ```bash
   pip install requests
   ```
 
-- Un serveur **Sonarr** et **Radarr** fonctionnel avec les **API activées**. Vous aurez besoin de l'URL de votre instance Sonarr/Radarr et de la clé API respective.
+- A functional **Sonarr** and **Radarr** server with **APIs enabled**. You will need the URL of your Sonarr/Radarr instance and the respective API key.
 
 ## Configuration ⚡
 
-1. Clonez ou téléchargez ce dépôt :
+1. Clone or download this repository:
    ```bash
    git clone https://github.com/Limoniak/arr-missing-searcher.git
    cd arr-missing-searcher
    ```
 
-2. Ouvrez les scripts et remplissez les informations suivantes :
+2. Open the scripts and fill in the following information:
 
-   - **Sonarr** :
-     - `sonarr_url`: URL de votre serveur Sonarr (par exemple, `http://localhost:8989`).
-     - `sonarr_api_key`: La clé API de votre instance Sonarr.
+   - **Sonarr**:
+     - `sonarr_url`: URL of your Sonarr server (e.g., `http://localhost:8989`).
+     - `sonarr_api_key`: The API key for your Sonarr instance.
 
-   - **Radarr** :
-     - `radarr_url`: URL de votre serveur Radarr (par exemple, `http://localhost:7878`).
-     - `radarr_api_key`: La clé API de votre instance Radarr.
+   - **Radarr**:
+     - `radarr_url`: URL of your Radarr server (e.g., `http://localhost:7878`).
+     - `radarr_api_key`: The API key for your Radarr instance.
 
-## Utilisation 🚀
+## Usage 🚀
 
-### Pour Sonarr & Radarr 🎬
-Le script vérifiera les films/séries manquantes et lancera une recherche pour chaque film/épisode manquant.
+### For Sonarr & Radarr 🎬
+The script will check for missing movies/series and initiate a search for each missing movie/episode.
 
 ```bash
 python sonarr_missing_searcher.py
 python radarr_missing_searcher.py
 ```
 
-## Planification 🕓
+## Scheduling 🕓
 
-Exemple de cron job (toutes les heures) :
+Example of a cron job (every hour):
 ```bash
 0 * * * * /usr/bin/python3 /path/to/sonarr_missing_searcher.py
 0 * * * * /usr/bin/python3 /path/to/radarr_missing_searcher.py
 ```
 
-## Contribuer 🤝
+## Contributing 🤝
 
-Les contributions sont les bienvenues ! Si vous souhaitez améliorer ce projet, n'hésitez pas à ouvrir un **issue** ou à soumettre une **pull request**.
+Contributions are welcome! If you’d like to improve this project, feel free to open an **issue** or submit a **pull request**.
 
-## Licence 📄
+## License 📄
 
-Ce projet est sous la licence MIT.
+This project is licensed under the MIT License.
 
 ---
 
-### Quelques conseils 💡 :
+### Tips 💡:
 
-1. Assurez-vous de configurer correctement vos URLs et clés API avant d'exécuter le script.
-2. Planifiez l'exécution régulière des scripts pour garantir que vos bibliothèques restent à jour avec les derniers épisodes et films.
+1. Ensure you configure your URLs and API keys correctly before running the script.
+2. Schedule regular execution of the scripts to ensure your libraries stay up-to-date with the latest episodes and movies.
